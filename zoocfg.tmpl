@@ -14,7 +14,7 @@ electionAlg=$electionAlg
 #end if
 
 #for $sid, $servername, $clientport, $port1, $port2 in $serverlist
-server.$sid=$servername:$port1:$port2
+server.$sid=$servername:$port1:$port2:participant;$clientport
 #end for
 
 #if len($weights) > 0
